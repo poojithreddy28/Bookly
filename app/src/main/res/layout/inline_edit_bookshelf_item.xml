@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/bookImageView"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/bookTitleTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Book Title"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/bookImageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp" />
+
+        <TextView
+            android:id="@+id/bookAuthorTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Author Name"
+            app:layout_constraintStart_toStartOf="@id/bookTitleTextView"
+            app:layout_constraintTop_toBottomOf="@id/bookTitleTextView"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/genreEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Genre"
+            app:layout_constraintStart_toStartOf="@id/bookAuthorTextView"
+            app:layout_constraintTop_toBottomOf="@id/bookAuthorTextView"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            app:layout_constraintTop_toBottomOf="@id/genreEditText"
+            app:layout_constraintStart_toStartOf="@id/genreEditText"
+            android:layout_marginTop="8dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

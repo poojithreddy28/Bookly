@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/signup_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Bookly Heading -->
+        <TextView
+            android:id="@+id/booklyHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bookly"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp" />
+
+        <!-- App Logo -->
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/splash_book"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="App Logo" />
+
+        <!-- First Name -->
+        <EditText
+            android:id="@+id/firstNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <!-- Last Name -->
+        <EditText
+            android:id="@+id/lastNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/signupEmailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:padding="12dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/signupPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <!-- Confirm Password -->
+        <EditText
+            android:id="@+id/confirmPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <!-- Signup Button -->
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Redirect to Login -->
+        <TextView
+            android:id="@+id/loginRedirectText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Log In"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>
